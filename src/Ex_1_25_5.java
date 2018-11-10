@@ -3,14 +3,23 @@
  */
 
 /**
+ * @author Xabier
+ *
+ */
+/**
+ * 
+ */
+
+/**
  * @author ik013043z1
  *
  */
 import java.util.ArrayList;
+import java.util.ListIterator;
 import java.util.Scanner;
 import java.io.*;
 
-public class Ex_1_25_4 {
+public class Ex_1_25_5 {
 
 	/**
 	 * @param args
@@ -44,6 +53,24 @@ public class Ex_1_25_4 {
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
+		}
+		
+		
+		ListIterator li = matches.listIterator();
+		
+		while(li.hasNext()) {
+			
+			FootballMatch auxMatch = li.next(); //Konpondu
+			
+			if(auxMatch.getGoalsLocal()==auxMatch.getGoalsVisitor()) {
+				
+				System.out.println(auxMatch.getLocalTeam() + " " + auxMatch.getGoalsLocal() + " - "
+						+ auxMatch.getGoalsVisitor() + " " + auxMatch.getVisitorTeam());
+				
+				li.remove();
+			}
+			
+			
 		}
 
 		System.out.println(matches);
