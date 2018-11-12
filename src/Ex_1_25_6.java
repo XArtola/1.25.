@@ -51,9 +51,7 @@ public class Ex_1_25_6 {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
-
 			dataBase.add(matches);
-
 		}
 
 		for (int b = 0; dataBase.size() - 1 >= b; b++) {
@@ -67,8 +65,6 @@ public class Ex_1_25_6 {
 						+ ((FootballMatch) dataBase.get(b).get(c)).getVisitorTeam());
 
 			System.out.println("\n\n");
-
 		}
 	}
-
 }
