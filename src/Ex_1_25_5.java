@@ -38,6 +38,7 @@ public class Ex_1_25_5 {
 				FootballMatch match = new FootballMatch(); //ZERGATIK????
 
 				String lineValues[] = sc.nextLine().split("::");
+				
 				match.setLocalTeam(lineValues[0]);
 
 				match.setVisitorTeam(lineValues[1]);
@@ -60,7 +61,7 @@ public class Ex_1_25_5 {
 		
 		while(li.hasNext()) {
 			
-			FootballMatch auxMatch = li.next(); //Konpondu
+			FootballMatch auxMatch = (FootballMatch) li.next(); //Konpondu
 			
 			if(auxMatch.getGoalsLocal()==auxMatch.getGoalsVisitor()) {
 				
@@ -72,8 +73,6 @@ public class Ex_1_25_5 {
 			
 			
 		}
-
-		System.out.println(matches);
 
 		System.out.println("There are " + matches.size() + " matches\n" + "They are: \n");
 		for (int a = 0; matches.size() - 1 >= a; a++)
