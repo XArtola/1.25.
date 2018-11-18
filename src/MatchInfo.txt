@@ -1,4 +1,4 @@
-Leganés::Atlético Madrid::15::1::
+Leganés::Atlético Madrid::15::1
 Real Madrid::Valladolid::2::0
 Valencia::Girona::0::1
 Rayo Vallecano::Barcelona::2::3
